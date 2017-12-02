@@ -47,7 +47,7 @@
 
         var s = document.getElementById("cards").value;
 
-        var s = s.replace(/\t\d+\t/g, ", ");
+        var s = s.replace(/[ \t][0][ \t]/g, ", ");
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-        oro = document.getElementById("cards").value.split(/\t\d+\t/);
+        oro = document.getElementById("cards").value.split(/[ \t][0][ \t]/);
 
         document.getElementById("result").innerHTML += oro[1] + " oros";
 
